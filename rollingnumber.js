@@ -6,11 +6,12 @@ window.requestAnimFrame = (function () {
     window.oRequestAnimationFrame ||
     window.msRequestAnimationFrame ||
     function (callback) {
-      window.setTimeout(callback, 2000000000 / 60);
+      window.setTimeout(callback, 1000 / 60);
     };
 })();
 
 var percentEl = document.querySelector('.percent');
+var max = 5900000000;
 var max = 6200000000;
 
 (function animloop() {
