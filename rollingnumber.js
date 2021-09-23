@@ -10,8 +10,8 @@ window.requestAnimFrame = (function () {
     };
 })();
 
-var percentEl = document.querySelector('.percent');
-var max = 6421000000;
+let percentEl = document.querySelector('.percent');
+let max = 6421000000;
 
 (function animloop() {
   if (percentEl.innerHTML >= max) { return; } //Stop recursive when max reach
